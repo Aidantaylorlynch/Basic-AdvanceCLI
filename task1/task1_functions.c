@@ -9,6 +9,7 @@
 #include <dirent.h> /* defines type "DIR", used for open dir, */
 #include <fcntl.h> /* O_CREAT flag */
 #include <stdio.h>
+#include <sys/wait.h> /* allow for wait function to be called */
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h> /* used for open dir, */

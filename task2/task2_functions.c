@@ -11,6 +11,7 @@
 #include <fcntl.h> /* O_CREAT flag */
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/wait.h> /* allow for wait function to be called */
 #include <string.h>
 #include <sys/types.h> /* used for open dir, */
 #include "task2_functions.h" /* used to import global variable "running"*/
