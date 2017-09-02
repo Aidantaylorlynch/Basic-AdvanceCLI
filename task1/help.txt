@@ -1,0 +1,76 @@
+Welcome to the help page for BASIC CLI. The follow guide demonstrate
+the functionality and correct usage of this program.
+
+
+OVERVIEW:
+
+This is a basic command line interpreter that when executed, waits for input
+from a user:
+
+  ->>   USER$
+
+This CLI supports the following operations:
+  - clear
+  - cd <directory>
+  - ls <directory>
+  - echo <statement>
+  - help
+  - quit
+
+
+CLEAR:
+clear
+
+By entering "clear", the output screen with be cleared, and the user pointer will
+be moved to index 1,1.
+
+sample usage: USER$ clear
+
+
+CD :
+cd <directory>
+
+By entering "cd <directory>", the default directory will be changed to <directory>.
+If no directory is specified, the default directory will be changed to the users
+HOME environment variable. This command also updates the users PWD variable.
+
+sample usage: USER$ cd /Users
+sample usage: USER$ cd
+
+
+LS:
+ls <directory>
+
+By entering "ls <directory>", the contents of the specified directory will be
+listed to the screen. If no directory is specified, the current directory contents
+will be listed.
+
+sample usage: USER$ ls /Desktop
+sample usage: USER$ ls
+
+
+ECHO:
+echo <statement>
+
+By entering "echo <statement>", <statement> will be printed to the screen. In order
+for the command to recognize the <statement>, it must be enclosed by double quotation marks.
+
+sample usage: USER$ echo "Hello world!"
+
+
+HELP:
+help
+
+By entering "help", the help pages for this program will be displayed.
+**NOTE** the help command assumes that it is being executed in the same directory
+as this program. It will not work if the current directory is different.
+
+sample usage: USER$ help
+
+
+QUIT:
+quit
+
+By entering "quit" command will cause the current execution of the program to stop.
+
+sample usage: USER$ quit
